@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal profile page of Daniyar Ospanov, IT student and online store owner learning web development.">
+  <title>My Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #ffffff;
+      color: black;
+    }
+    nav a {
+      margin-right: 15px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ospanov Daniyar</h1>
+    <p>Aspiring Web Developer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#goals">Goals</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="photo.jpg" alt="Daniyar" width="240">
+      <p>
+        Hi, my name is Ospanov and I'm an IT student at KBTU. I also have side hustle. I'm taking this course just for necessaty.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+      <ul>
+        <li>HTML and CSS basics</li>
+        <li>Using Git and GitHub</li>
+        <li>Some Python</li>
+        <li>Speaking Russian, Kazakh, English </li>
+      </ul>
+    </section>
+
+    <section id="goals">
+      <h2>My Goals</h2>
+      <table>
+        <tr>
+          <th>Skill</th>
+          <th>Level Now</th>
+          <th>Goal</th>
+        </tr>
+        <tr>
+          <td>HTML/CSS</td>
+          <td>Beginner</td>
+          <td>Build a full site layout on my own without copying examples</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Never really touched it</td>
+          <td>Make a simple form actually work</td>
+        </tr>
+        <tr>
+          <td>Git</td>
+          <td>Basic</td>
+          <td>Comfortable for use,but have problems sometimes</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:1-daniyar@list.ru">1-daniyar@list.ru</a></p>
+
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+  </main>
+  <footer>
+    <p>&copy; 2026 Daniyar Ospanov. Built for the web development course.</p>
+  </footer>
+  
+
+</body>
+</html>
