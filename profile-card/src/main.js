@@ -1,3 +1,4 @@
+import './style.css'
 const likeBtn = document.querySelector('#like-btn');
 const card = document.querySelector('#card');
 
