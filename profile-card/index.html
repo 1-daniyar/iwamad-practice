@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 2 - Profile Card</title>
+
+  <!-- Practice 2, Step 2: Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+
+  <header class="text-center py-6">
+    <h1>My Profile Card</h1>
+  </header>
+
+  <main>
+    <article class="card" id="card">
+      <img src="/Ego.jpeg" alt="My photo" class="avatar rounded-full">
+
+      <div class="info">
+        <h2>Ospanov Daniyar</h2>
+        <p class="text-gray-600 mt-2 mb-4">
+          I am an IT student who is learning web development.
+          I like develop my ideas and trying new things.
+          Right now I concentrated in being best version of myself.
+        </p>
+
+        <div class="links">
+          <a href="mailto:1-daniyar@list.ru" class="px-3 py-1 rounded">Email</a>
+          <a href="https://github.com/1-daniyar" class="px-3 py-1 rounded" target="_blank">GitHub</a>
+        </div>
+
+        <button id="like-btn" class="mt-4 px-4 py-2 rounded">♡ Like</button>
+      </div>
+    </article>
+  </main>
+
+  <footer class="text-center text-sm text-gray-500 py-6">
+    <p>Week 2 practice - IWaMAD</p>
+  </footer>
+</body>
+</html>
