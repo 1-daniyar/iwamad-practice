@@ -90,4 +90,15 @@ body {
   .links {
     justify-content: center;
   }
+
+  
+}
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+}
+
+nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid currentColor;
 }
