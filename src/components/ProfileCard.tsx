@@ -1,12 +1,13 @@
-import { useState } from 'react';
 import type { ProfileCardProps } from '../types';
 import SkillItem from './SkillItem';
+import LikeButton from './LikeButton';
+import { useLikes } from '../context/LikesContext';
 
 function ProfileCard({ name, bio, avatarUrl, email, githubUrl, skills }: ProfileCardProps) {
-  const [liked, setLiked] = useState(false);
+  const { likes } = useLikes();
 
   return (
-    <article className={liked ? 'card liked' : 'card'}>
+    <article className={likes > 0 ? 'card liked' : 'card'}>
       <img src={avatarUrl} alt="My photo" className="avatar" />
 
       <div className="info">
@@ -28,12 +29,7 @@ function ProfileCard({ name, bio, avatarUrl, email, githubUrl, skills }: Profile
           </ul>
         )}
 
-        <button
-          className={liked ? 'Liked' : 'Like'}
-          onClick={() => setLiked(!liked)}
-        >
-          {liked ? '♥ Liked' : '♡ Like'}
-        </button>
+        <LikeButton />
       </div>
     </article>
   );
