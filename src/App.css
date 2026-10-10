@@ -7,10 +7,10 @@ body {
 
 .profile-card {
   display: flex;
+  flex-direction: row;
   gap: 20px;
   max-width: 600px;
   margin: 20px auto;
-  
 }
 
 .card.liked {
