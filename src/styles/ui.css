@@ -60,3 +60,7 @@
 .field input[aria-invalid='true'] { border: 2px solid var(--color-error); }
 .field-error { margin: 0; color: var(--color-error); font-size: 0.875rem; }
 .check { display: flex; align-items: center; gap: var(--space-2); min-height: 44px; }
+.card-grid { display: grid; gap: var(--space-4);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+.card-grid h2 { margin-top: 0; font-size: 1.25rem; }
+.card-grid .card { max-width: none; }

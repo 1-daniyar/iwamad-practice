@@ -5,6 +5,8 @@ import SkillsPage from './pages/SkillsPage'
 import ContactPage from './pages/ContactPage'
 import NotFoundPage from './pages/NotFoundPage'
 import RegisterPage from './pages/RegisterPage'
+import EventsPage from './pages/EventsPage'
+import EventDetailsPage from './pages/EventDetailsPage'
 import './App.css'
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
         <Route path="skills" element={<SkillsPage />} />
         <Route path="contact" element={<ContactPage />} />
         <Route path="register" element={<RegisterPage />} />
+        <Route path="events" element={<EventsPage />} />
+        <Route path="events/:eventId" element={<EventDetailsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
